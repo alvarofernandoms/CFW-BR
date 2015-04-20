@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.webkit.WebView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
@@ -53,8 +54,11 @@ public class MainActivity extends ActionBarActivity implements
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		fragmentManager
 				.beginTransaction()
-				.replace(R.id.container,
-						PlaceholderFragment.newInstance(position + 1)).commit();
+				.replace(
+						R.id.container,
+						PlaceholderFragment.newInstance(
+								"cap_" + (position + 1), position + 1))
+				.commit();
 	}
 
 	public void onSectionAttached(int number) {
@@ -199,15 +203,20 @@ public class MainActivity extends ActionBarActivity implements
 		 * fragment.
 		 */
 		private static final String ARG_SECTION_NUMBER = "section_number";
+		private static final String PAGE = "page_html";
 
 		/**
 		 * Returns a new instance of this fragment for the given section number.
+		 *
+		 * @param string
 		 */
-		public static PlaceholderFragment newInstance(int sectionNumber) {
+		public static PlaceholderFragment newInstance(String page,
+				int sectionNumber) {
 			PlaceholderFragment fragment = new PlaceholderFragment();
 			Bundle args = new Bundle();
 			args.putInt(ARG_SECTION_NUMBER, sectionNumber);
 			fragment.setArguments(args);
+			args.putString(PAGE, page);
 			return fragment;
 		}
 
@@ -219,6 +228,14 @@ public class MainActivity extends ActionBarActivity implements
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_main, container,
 					false);
+
+			Bundle args = getArguments();
+
+			final WebView page = (WebView) rootView.findViewById(R.id.page);
+
+			page.loadUrl("file:///android_asset/" + args.getString(PAGE)
+					+ ".html");
+
 			return rootView;
 		}
 
