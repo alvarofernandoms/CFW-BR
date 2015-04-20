@@ -68,6 +68,93 @@ public class MainActivity extends ActionBarActivity implements
 		case 3:
 			mTitle = getString(R.string.title_section3);
 			break;
+		case 4:
+			mTitle = getString(R.string.title_section4);
+			break;
+		case 5:
+			mTitle = getString(R.string.title_section5);
+			break;
+		case 6:
+			mTitle = getString(R.string.title_section6);
+			break;
+		case 7:
+			mTitle = getString(R.string.title_section7);
+			break;
+		case 8:
+			mTitle = getString(R.string.title_section8);
+			break;
+		case 9:
+			mTitle = getString(R.string.title_section9);
+			break;
+		case 10:
+			mTitle = getString(R.string.title_section10);
+			break;
+		case 11:
+			mTitle = getString(R.string.title_section11);
+			break;
+		case 12:
+			mTitle = getString(R.string.title_section12);
+			break;
+		case 13:
+			mTitle = getString(R.string.title_section13);
+			break;
+		case 14:
+			mTitle = getString(R.string.title_section14);
+			break;
+		case 15:
+			mTitle = getString(R.string.title_section15);
+			break;
+		case 16:
+			mTitle = getString(R.string.title_section16);
+			break;
+		case 17:
+			mTitle = getString(R.string.title_section17);
+			break;
+		case 18:
+			mTitle = getString(R.string.title_section18);
+			break;
+		case 19:
+			mTitle = getString(R.string.title_section19);
+			break;
+		case 20:
+			mTitle = getString(R.string.title_section20);
+			break;
+		case 21:
+			mTitle = getString(R.string.title_section21);
+			break;
+		case 22:
+			mTitle = getString(R.string.title_section22);
+			break;
+		case 23:
+			mTitle = getString(R.string.title_section23);
+			break;
+		case 24:
+			mTitle = getString(R.string.title_section24);
+			break;
+		case 25:
+			mTitle = getString(R.string.title_section25);
+			break;
+		case 26:
+			mTitle = getString(R.string.title_section26);
+			break;
+		case 27:
+			mTitle = getString(R.string.title_section28);
+			break;
+		case 29:
+			mTitle = getString(R.string.title_section29);
+			break;
+		case 30:
+			mTitle = getString(R.string.title_section30);
+			break;
+		case 31:
+			mTitle = getString(R.string.title_section31);
+			break;
+		case 32:
+			mTitle = getString(R.string.title_section32);
+			break;
+		case 33:
+			mTitle = getString(R.string.title_section33);
+			break;
 		}
 	}
 

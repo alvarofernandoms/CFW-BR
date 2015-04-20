@@ -110,7 +110,37 @@ public class NavigationDrawerFragment extends Fragment {
 				android.R.id.text1, new String[] {
 						getString(R.string.title_section1),
 						getString(R.string.title_section2),
-						getString(R.string.title_section3), }));
+						getString(R.string.title_section3),
+						getString(R.string.title_section4),
+						getString(R.string.title_section5),
+						getString(R.string.title_section6),
+						getString(R.string.title_section7),
+						getString(R.string.title_section8),
+						getString(R.string.title_section9),
+						getString(R.string.title_section10),
+						getString(R.string.title_section11),
+						getString(R.string.title_section12),
+						getString(R.string.title_section13),
+						getString(R.string.title_section14),
+						getString(R.string.title_section15),
+						getString(R.string.title_section16),
+						getString(R.string.title_section17),
+						getString(R.string.title_section18),
+						getString(R.string.title_section19),
+						getString(R.string.title_section20),
+						getString(R.string.title_section21),
+						getString(R.string.title_section22),
+						getString(R.string.title_section23),
+						getString(R.string.title_section24),
+						getString(R.string.title_section25),
+						getString(R.string.title_section26),
+						getString(R.string.title_section27),
+						getString(R.string.title_section28),
+						getString(R.string.title_section29),
+						getString(R.string.title_section30),
+						getString(R.string.title_section31),
+						getString(R.string.title_section32),
+						getString(R.string.title_section33), }));
 		mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 		return mDrawerListView;
 	}
