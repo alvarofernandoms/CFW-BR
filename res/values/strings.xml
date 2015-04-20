@@ -37,7 +37,7 @@
     <string name="title_section33">Capítulo 33</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_example">Example action</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_example">Pesquisar</string>
+    <string name="action_settings">Configurações</string>
 
 </resources>
