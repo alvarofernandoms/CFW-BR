@@ -142,6 +142,9 @@ public class MainActivity extends ActionBarActivity implements
 			mTitle = getString(R.string.title_section26);
 			break;
 		case 27:
+			mTitle = getString(R.string.title_section27);
+			break;
+		case 28:
 			mTitle = getString(R.string.title_section28);
 			break;
 		case 29:
